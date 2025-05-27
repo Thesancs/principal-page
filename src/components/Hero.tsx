@@ -10,8 +10,8 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden relative">
-      <div className="absolute inset-0 bg-[url('https://imgur.com/a/4be2QHc')] bg-cover bg-center opacity-10"></div>
+    <section className="w-full pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden relative bg-dark-bg dark:bg-black
+      <div className="absolute inset-0 bg-[url('https://imgur.com/a/4be2QHc')] bg-cover bg-center opacity-5"></div>
       <div className="absolute top-20 right-[20%] w-64 h-64 bg-amber-500/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-[10%] w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
 
@@ -36,11 +36,11 @@ const Hero: React.FC = () => {
 
 
           {/* TÍTULO E TEXTO */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="block mb-2">GUIA:</span>
-            <span className="text-yellow-400 [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
-              Ouro do Brás
-            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+             <span className="block mb-2">GUIA:</span>
+           <span className="text-primary [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)]">
+               Ouro do Brás
+             </span>
           </h1>
 
           <p className="font-roboto text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -50,22 +50,22 @@ const Hero: React.FC = () => {
           </p>
 
           {/* BOTÕES */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <Button href="#comprar" size="lg" onClick={scrollToPrice}>
-              GARANTIR MINHA VAGA
-            </Button>
-            <Button href="#beneficios" variant="outlined" size="lg">
-              Saiba Mais
-            </Button>
+               GARANTIR MINHA VAGA
+             </Button>
+             <Button href="#beneficios" variant="outlined" size="lg">
+             Saiba Mais
+             </Button>
           </div>
 
          
 
           {/* SETA DE ROLAGEM */}
-          <a
-            href="#beneficios"
-            className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-400 [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)] flex flex-col items-center mt-12 animate-bounce"
-            aria-label="Rolar para baixo"
+             <a
+             href="#beneficios"
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-primary [text-shadow:_0_1px_0_rgb(255_255_255_/_40%)] flex flex-col items-center mt-12 animate-bounce"
+             aria-label="Rolar para baixo"
           >
             <ChevronDown size={20} />
           </a>
