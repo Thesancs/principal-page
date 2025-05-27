@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           {/* TÍTULO E TEXTO */}
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
-+              GUIA: <span className="text-primary">Ouro do Brás</span>
+              GUIA: <span className="text-primary">Ouro do Brás</span>
             </span>
           </h1>
 
