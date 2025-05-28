@@ -22,10 +22,10 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'relative font-bold rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center';
   
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 hover:shadow-lg hover:shadow-amber-500/30',
-    secondary: 'bg-gradient-to-r from-indigo-600 to-blue-500 text-white hover:shadow-lg hover:shadow-blue-500/30',
-    outlined: 'border-2 border-amber-400 text-amber-400 hover:bg-amber-400/10',
-  };
+  primary: 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/50',
+  secondary: 'bg-secondary text-white hover:bg-secondary-dark shadow-lg shadow-secondary/50',
+  outlined: 'border-2 border-primary text-primary hover:bg-primary/10',
+};
   
   const sizeClasses = {
     sm: 'text-sm py-2 px-4',
